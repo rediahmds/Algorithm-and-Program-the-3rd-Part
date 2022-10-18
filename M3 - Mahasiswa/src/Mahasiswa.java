@@ -1,16 +1,17 @@
+import java.util.Arrays;
+
 // Define a class named Mahasiswa
 public class Mahasiswa {
     // Class attributes
     String nama;
     String kelas;
-    int NPM;
+    String NPM;
 
     // Constructor - get executed when a class is instantiated
-    public Mahasiswa(String nama, String kelas, int NPM) {
+    public Mahasiswa(String nama, String kelas, String NPM) {
         this.nama = nama;
         this.kelas = kelas;
         this.NPM = NPM;
-        System.out.println("Constructor executed.");
     }
 
     // Method - get executed only if it is called
@@ -21,16 +22,39 @@ public class Mahasiswa {
     }
 
     // Method 2
-    public int tunjukanNPM() {
-        return NPM;
+    public String tunjukanID() {
+        String ID[] = {
+                nama, kelas, NPM
+        };
+        return Arrays.toString(ID);
     }
+
+    // Method 3
+    public String kerjakanTugas(String tugas) {
+        return nama + " sedang mengerjakan tugas " + tugas;
+    };
 
     public static void main(String[] args) {
         // Instantiate a class
-        Mahasiswa redi = new Mahasiswa("Redi Ahmad", "2KB05", 21121086);
+        Mahasiswa redi = new Mahasiswa("Redi Ahmad", "2KB05", "21121086");
+        Mahasiswa ucup = new Mahasiswa("Yusuf Hamdani", "2KB05", "20121943");
+        Mahasiswa alda = new Mahasiswa("Alda Emly", "2KB05", "20121103");
 
-        // Calling method of an object
-        System.out.println(redi.ikutiKuliah("Matematika"));
-        System.out.println(redi.tunjukanNPM());
+        // Calling methods
+        System.out.println(redi.tunjukanID());
+        System.out.println(redi.ikutiKuliah("Matematika Lanjut"));
+        System.out.println(redi.kerjakanTugas("Matematika Lanjut"));
+
+        System.out.print("\n");
+
+        System.out.println(ucup.tunjukanID());
+        System.out.println(ucup.ikutiKuliah("Algoritma dan Pemrograman 3"));
+        System.out.println(ucup.kerjakanTugas("Algoritma dan Pemrograman 3"));
+
+        System.out.print("\n");
+
+        System.out.println(alda.tunjukanID());
+        System.out.println(alda.ikutiKuliah("Sistem Operasi"));
+        System.out.println(alda.kerjakanTugas("Sistem Operasi"));
     }
 }
