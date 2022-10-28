@@ -43,6 +43,9 @@ class Mahasiswa {
     else if ((rerataNilai >= 40) && (rerataNilai < 60))
       predikat = 'D';
 
+    // TODO: Add a new condition that handle value < 40.
+    // TODO: Also, use try and catch block.
+
     return predikat;
   }
 
