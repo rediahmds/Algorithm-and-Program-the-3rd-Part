@@ -1,18 +1,6 @@
-## Getting Started
+## Meet 3 - Creates a simple class
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Introduction to basic syntax of Java and OOP.
+The homework is simple, create a class consist of three instances at minimum.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+I created 3 methods and 3 properties. I know that the source code isn't clean, too many repetition. So, I have to study more tho 😅😅
