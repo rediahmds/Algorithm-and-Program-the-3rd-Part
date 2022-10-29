@@ -1,7 +1,7 @@
 
 public class Main {
   public static void main(String[] args) {
-    Mahasiswa edi = new Mahasiswa("Juned", "1IA69", 80.788, 69.98);
+    Mahasiswa edi = new Mahasiswa("Juned", "1IA69", 67, 69.98);
     System.out.println("Rerata nilai " + edi.nama + " = " + edi.hitungRerataNilai());
     System.out.println("Predikat nilai " + edi.nama + ": " + edi.predikatNilai());
   }
@@ -42,9 +42,8 @@ class Mahasiswa {
       predikat = 'C';
     else if ((rerataNilai >= 40) && (rerataNilai < 60))
       predikat = 'D';
-
-    // TODO: Add a new condition that handle value < 40.
-    // TODO: Also, use try and catch block.
+    else if ((rerataNilai < 40))
+      predikat = 'E';
 
     return predikat;
   }
