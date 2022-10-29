@@ -1,4 +1,4 @@
-## Meet 3 - Creates a simple class
+# Meet 3 - Creates a simple class
 
 Introduction to basic syntax of Java and OOP.
 The homework is simple, create a class consist of three instances at minimum.
